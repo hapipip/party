@@ -1,0 +1,21 @@
+vehicule:
+  type: abstract
+  
+  attributes:
+    wheels: 
+      type: integer
+      default: 2
+    hasEngine: 
+      type: boolean
+      default: true
+    driver:
+      model:
+        person:
+          name: string
+
+bike:
+  inherit: vehicule
+  
+  attribute:
+    hasEngine:
+      default: false
