@@ -1,5 +1,5 @@
 'use strict';
-console.log('niac');
+
 const Lab =  require('lab');
 const Hapi = require('hapi');
 const Path = require('path');
@@ -8,7 +8,6 @@ const {describe, it, beforeEach} = exports.lab = Lab.script();
 
 describe('Party time', () => {
   let server;
-  console.log('coucou');
 
   beforeEach(done => {
     server = new Hapi.Server();

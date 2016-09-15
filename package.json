@@ -4,7 +4,8 @@
   "description": "A hapi party for models",
   "main": "lib/index.js",
   "scripts": {
-    "test": "lab -vcCD test/index.js"
+    "test": "lab -vcCD test/index.js",
+    "eslint": "eslint test/ lib/"
   },
   "repository": {
     "type": "git",
