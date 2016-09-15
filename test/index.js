@@ -22,7 +22,6 @@ describe('Party time', () => {
         models: [Path.join(__dirname, 'fixtures', 'models')]
       }
     }, err => {
-      console.log(err);
       expect(err).to.not.exist();
 
       done();
