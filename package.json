@@ -4,7 +4,7 @@
   "description": "A hapi party for models",
   "main": "lib/index.js",
   "scripts": {
-    "test": "lab -cCV test/index.js"
+    "test": "lab -vcCD test/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/hapipip/party#readme",
   "devDependencies": {
     "code": "^3.0.2",
+    "eslint": "^3.5.0",
     "hapi": "^15.0.3",
     "lab": "^11.0.1"
   },
