@@ -19,12 +19,35 @@ describe('Party time', () => {
     server.register({
       register: require('../lib/index'),
       options: {
-        models: [Path.join(__dirname, 'fixtures', 'models')]
+        defaultStore: 'simple',
+        cache: Path.join(__dirname, 'cache'),
+        models: [Path.join(__dirname, 'fixtures', 'models')],
+        stores: {
+          simple: {
+            adapter: 'memory'
+          }
+        }
       }
     }, err => {
       expect(err).to.not.exist();
 
-      done();
+      server.start(err => {
+        expect(err).to.not.exist();
+
+        expect(server.collections).to.exist();
+        const Person = server.collections(true).person;
+        expect(Person).to.exist();
+
+        Person.create({name: 'Ga'});
+        // Person.findOne(1).exec((err, Ga) => {
+        //   expect(err).to.not.exist();
+        //
+        //   console.log(err, Ga);
+        //   expect(Ga).to.exist();
+        //   expect(Ga.name).to.be.equal('Ga');
+        // });
+        done();
+      });
     });
   });
 });

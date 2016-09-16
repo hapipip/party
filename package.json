@@ -31,6 +31,9 @@
   "dependencies": {
     "dogwater": "^2.2.0",
     "pellmell": "^1.0.0",
+    "sails-disk": "^0.10.10",
+    "sails-memory": "^0.10.7",
+    "sails-mysql": "^0.11.5",
     "waterline": "^0.12.2"
   }
 }
