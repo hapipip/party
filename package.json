@@ -1,0 +1,39 @@
+{
+  "name": "party",
+  "version": "1.0.0",
+  "description": "A hapi party for models",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "lab -vcCD test/index.js",
+    "eslint": "eslint test/ lib/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hapipip/party.git"
+  },
+  "keywords": [
+    "ORM",
+    "Hapi",
+    "database"
+  ],
+  "author": "Nicolas Dufreche <n.dufreche@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/hapipip/party/issues"
+  },
+  "homepage": "https://github.com/hapipip/party#readme",
+  "devDependencies": {
+    "code": "^3.0.2",
+    "eslint": "^3.5.0",
+    "hapi": "^15.0.3",
+    "lab": "^11.0.1"
+  },
+  "dependencies": {
+    "dogwater": "^2.2.0",
+    "pellmell": "^1.0.0",
+    "sails-disk": "^0.10.10",
+    "sails-memory": "^0.10.7",
+    "sails-mysql": "^0.11.5",
+    "waterline": "^0.12.2"
+  }
+}

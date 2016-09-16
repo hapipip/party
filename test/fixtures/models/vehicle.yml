@@ -1,0 +1,31 @@
+vehicule:
+  abstract: ~
+
+  attributes:
+    wheels:
+      type: integer
+      default: 2
+    hasEngine:
+      type: boolean
+      default: true
+    driver:
+      model: person
+    color:
+      type: string
+      enum:
+        - unpainted
+        - white
+        - green
+        - red
+        - black
+
+bike:
+  inherit: vehicule
+
+  attributes:
+    hasEngine:
+      default: false
+
+person:
+  attributes:
+    name: string
